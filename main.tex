@@ -6,6 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 % \title{CV}
+
 \documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
@@ -23,9 +24,11 @@
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
+
+
 % personal data
 \name{Michał}{Martusewicz}
-% \title{CV}                               % optional, remove / comment the line if not wanted
+\title{BEng}                               % optional, remove / comment the line if not wanted
 \address{Fiołkowa 6}{55-010 Święta Katarzyna}{Poland}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+48~603~889~177}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 % \phone[fixed]{+2~(345)~678~901}
@@ -36,7 +39,7 @@
 \social[github]{iCarrrot}                              % optional, remove / comment the line if not wanted
 \social[linkedin]{michalmartusewicz}   
 % \extrainfo{}                 % optional, remove / comment the line if not wanted
-% \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\photo[64pt][0.2pt]{Michal_Martusewicz_grey}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 % \quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
 % bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
@@ -48,10 +51,16 @@
 % bibliography with mutiple entries
 %\usepackage{multibib}
 %\newcites{book,misc}{{Books},{Others}}
+
+
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
+
+
+
+
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
@@ -63,6 +72,7 @@
 \cventry{2015}{English course}{Atlantic Language School}{Galway, Ireland}{}{Upper intermediate level}  % arguments 3 to 6 can be left empty
 % \cventry{2012--2015}{High school}{}{Wrocław, Poland}{}{Special University Advanced Mathematics Program }  % arguments 3 to 6 can be left empty
 \cventry{2015}{Laureate of Regional Science Olympiad}{}{}{}{Physics}
+\cventry{2015--2019}{Secondary School no. III}{}{Wrocław, Poland}{}{} 
 \cventry{2012}{Laureate of Regional Science Olympiad}{}{}{}{Physics and Biology, Finalist in Mathematics, Chemistry and Geography}
 
 
@@ -78,20 +88,23 @@
         \item Image recognition (Python, TensorFLow, object detection API, Docker)
         \item Creating point clouds using Intel rgbd cameras and regular rgb cameras (PyRealSense, NumPy, matplotlib and other)
     \end{itemize}
-    \item \textbf{ShowMySize app} by Twinster:
+    \item \textbf{ShowMySize app} by Twinster - an app that measures the body's size and suggests suitable clothes:
     \begin{itemize}
-        \item Backend of the app (Django, REST API for Django, Postman for testing)
+        \item Creating backend of the app (Django, REST API for Django, Postman for testing)
         \item Working with Amazon Rekognition
     \end{itemize}
     \item \textbf{Connecting two databases without common identifiers:}
     \begin{itemize}
-        \item Using various NLP approaches
+        \item Using various NLP (natural language processing) approaches
         \item Created web app for presentation the results in 3 days (Django, Bootstrap)
     \end{itemize}
-    \item \textbf{Organizing Catalysts Coding Contests} - coding contest for university and high school students (more then 70 people per event averagely)
+    % \item \textbf{Organizing Catalysts Coding Contests} - coding contest for university and high school students (more then 70 people per event averagely)
     \item Managing summer interns for a short time
 \end{itemize}
 }
+\cventry{Nov 2018--}{Organizing Catalysts/Cloudflight Coding Contests}{Open programming contest for university and high school students}{Wrocław}{Poland}{The contest is used as a promotion and recruiting tool in Cloudflight/Catalysts. I have co--organised 3 events, with more than 70 people per event}
+
+
 
 \cventry{Summer 2018}{Internship}{Catalysts Deutschland GmBh}{Frankfurt}{Germany}{
 \textbf{Developing software for special satellites orbiters types}
@@ -101,7 +114,7 @@
     \item predicting possible collisions
 \end{itemize}
 }
-\cventry{2016--2017}{Web Administrator}{Foundation for the Development of Wrocław University of Economy}{Wrocław}{Poland}{Reformatting web page hosted on WordPress with additional js customization (HTML, CSS, JS)}
+\cventry{2016--2017}{Web Administrator}{Foundation for the Development of Wrocław University of Economy}{Wrocław}{Poland}{Reformatting web page hosted on WordPress with additional js customization (HTML, CSS, JS) - \url{http://fundacja.ue.wroc.pl/}}
 \cventry{Sep 2015}{Internship}{Parker Hannifin Manufacturing Poland}{Siechnice}{Poland}{Lean \& Production internship }
 % \cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
 % \subsection{Miscellaneous}
