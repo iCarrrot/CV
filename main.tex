@@ -20,7 +20,7 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.9]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -67,54 +67,72 @@
 
 \section{Education}
 % \cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 can be left empty
-\cventry{2019--}{University of Wrocław}{Computer science studies, MSc}{Wrocław, Poland}{}{}  % arguments 3 to 6 can be left empty
-\cventry{2015--2019}{University of Wrocław}{Computer science studies, BEng}{Wrocław, Poland}{}{}  % arguments 3 to 6 can be left empty
+\cventry{2019--}{University of Wrocław}{Computer science studies, MSc}{Wrocław, Poland}{}{
+Thesis: Lattice extending strategies to correct automatic speech recognition system}  % arguments 3 to 6 can be left empty
+\cventry{2015--2019}{University of Wrocław}{Computer science studies, BEng}{Wrocław, Poland}{}{Thesis: Agile development of an application supporting the tube fittings manufacturing management}  % arguments 3 to 6 can be left empty
 \cventry{2015}{English course}{Atlantic Language School}{Galway, Ireland}{}{Upper intermediate level}  % arguments 3 to 6 can be left empty
 % \cventry{2012--2015}{High school}{}{Wrocław, Poland}{}{Special University Advanced Mathematics Program }  % arguments 3 to 6 can be left empty
-\cventry{2015}{Laureate of Regional Science Olympiad}{}{}{}{Physics}
-\cventry{2015--2019}{Secondary School no. III}{}{Wrocław, Poland}{}{} 
-\cventry{2012}{Laureate of Regional Science Olympiad}{}{}{}{Physics and Biology, Finalist in Mathematics, Chemistry and Geography}
+\cventry{2015}{Laureate of Regional Physic Olympiad}{}{}{}{}
+\cventry{2012--2015}{Secondary School no. III}{}{Wrocław, Poland}{}{} 
+\cventry{2012}{Regional Science Olympiad}{"zDolny Ślązak"}{}{}{Laureate in Physics and Biology\\Finalist in Mathematics, Chemistry and Geography}
 
 
 
 \section{Work experience}
 % \subsection{Vocational}
-\cventry{Nov 2018--}{Software developer and data scientist}{Cloudflight Germany GmbH (formerly Catalysts Deutschland GmbH)}{Frankfurt}{Germany}{
+\cventry{Jun 2018--}{Cloudflight Germany GmbH (formerly Catalysts Deutschland GmbH)}{Software developer and data scientist}{Frankfurt}{Germany}{
 \textbf{Projects:}
 \begin{itemize}
+    \item\textbf{Developing software for special satellites orbits types}
+    \begin{itemize}
+        \item The project goal was to simulate and possibly lunch satellites on highly elliptical orbit - to have a constant vision on north and south poles
+        \item Simulating satellite orbits (GMAT, OreKit, Python, Docker)
+        \item Live tracking and visualization (NumPy, MatPlotlib)
+        \item predicting possible collisions
+    \end{itemize}
     \item \textbf{Airport luggage recognition and measuring system:}
     \begin{itemize}
+        \item The project goal was to embed in airport security gate a system which automatically measures passenger's luggage - to avoid cabin luggage space overloading
         \item Creating proper image dataset
         \item Image recognition (Python, TensorFLow, object detection API, Docker)
         \item Creating point clouds using Intel rgbd cameras and regular rgb cameras (PyRealSense, NumPy, matplotlib and other)
     \end{itemize}
-    \item \textbf{ShowMySize app} by Twinster - an app that measures the body's size and suggests suitable clothes:
+    \item \textbf{ShowMySize app} by Twinster
     \begin{itemize}
+        \item The project goal was to create a backend to an app that measures the body's size and suggests suitable clothes
         \item Creating backend of the app (Django, REST API for Django, Postman for testing)
         \item Working with Amazon Rekognition
     \end{itemize}
+    \item \textbf{Improving image preprocessing for Austrian social insurance company:}
+    \begin{itemize}
+        \item The goal was to improve mobile images of invoices and get better text recognition accuracy 
+        \item Researching for different computer vision techniques
+        \item Using Google Tesseract OCR
+    \end{itemize}
     \item \textbf{Connecting two databases without common identifiers:}
     \begin{itemize}
+        \item The goal was to connect a product database and not normalized database with product reviews 
         \item Using various NLP (natural language processing) approaches
         \item Created web app for presentation the results in 3 days (Django, Bootstrap)
     \end{itemize}
+    % \item\textbf{Developing software for special satellites orbiters types}
+    % \begin{itemize}
+    %     \item Simulating satellite orbits (GMAT, OreKit, Python, Docker)
+    %     \item Live tracking and visualization (NumPy, MatPlotlib)
+    %     \item predicting possible collisions
+    % \end{itemize}
     % \item \textbf{Organizing Catalysts Coding Contests} - coding contest for university and high school students (more then 70 people per event averagely)
     \item Managing summer interns for a short time
 \end{itemize}
 }
-\cventry{Nov 2018--}{Organizing Catalysts/Cloudflight Coding Contests}{Open programming contest for university and high school students}{Wrocław}{Poland}{The contest is used as a promotion and recruiting tool in Cloudflight/Catalysts. I have co--organised 3 events, with more than 70 people per event}
+\cventry{Nov 2018--}{Organizing Catalysts/Cloudflight Coding Contests}{Open programming contest for university and high school students}{Wrocław}{Poland}{The contest is used as a promotion and recruiting tool in Cloudflight/Catalysts. I have co--organized 3 events, with more than 70 people per event}
 
 
 
-\cventry{Summer 2018}{Internship}{Catalysts Deutschland GmBh}{Frankfurt}{Germany}{
-\textbf{Developing software for special satellites orbiters types}
-\begin{itemize}
-    \item Simulating satellite orbits (GMAT, OreKit, Python, Docker)
-    \item Live tracking and visualization (NumPy, MatPlotlib)
-    \item predicting possible collisions
-\end{itemize}
-}
-\cventry{2016--2017}{Web Administrator}{Foundation for the Development of Wrocław University of Economy}{Wrocław}{Poland}{Reformatting web page hosted on WordPress with additional js customization (HTML, CSS, JS) - \url{http://fundacja.ue.wroc.pl/}}
+% \cventry{Summer 2018}{Catalysts Deutschland GmBh}{Internship}{Frankfurt}{Germany}{
+
+% }
+\cventry{2016--2017}{Web Administrator}{Foundation for the Development of Wrocław University of Economy}{Wrocław}{Poland}{Reformatting web page hosted on WordPress with additional js customization (HTML, CSS, JS) \\ \url{http://fundacja.ue.wroc.pl/}}
 \cventry{Sep 2015}{Internship}{Parker Hannifin Manufacturing Poland}{Siechnice}{Poland}{Lean \& Production internship }
 % \cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
 % \subsection{Miscellaneous}
@@ -124,15 +142,15 @@
 \cvitem{description}{The subject of the thesis was creating a project and managing it using Scrum development framework and Unified Modeling Language.
 As a result of the project, an application supporting production management in Parker Hannifin Manufacturing Company in Siechnice was designed, implemented and installed.}
 % \newpage
-\section{Skills}
-\subsection{Languages}
+\section{Languages skills}
+% \subsection{Languages}
 \cvitem{English}{Businesses fluent}
 \cvitem{German}{Basic}
 % \cvitemwithcomment{Language 3}{Skill level}{Comment}
 
-\subsection{Computer skills}
-\cvitem{Advanced level}{Python, Django, ML}
-\cvitem{Medium level}{NLP, Bash, Git, Lua, C/C++, Ruby, PostgreSQL, LATEX, HTML + CSS + JavaScript, Bootstrap}
+\section{Computer skills}
+\cvitem{Advanced level}{Python (incl. pandas, numpy, django, matplotlib) Django, ML, NLP, Linux, Git}
+\cvitem{Medium level}{PyTorch, Bash, Docker, Lua, C/C++, Ruby, PostgreSQL, LATEX, HTML + CSS + JavaScript, Bootstrap}
 \cvitem{Basic level}{C\#, Java, OCaml,  Julia, Nim, Haskell, Prolog}
 
 % \cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
