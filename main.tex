@@ -1,202 +1,379 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.3, 10 May 2020) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
 %
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
 
-% \title{CV}
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
 
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
 
-% moderncv themes
-\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
-\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
 
-% character encoding
-\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\documentclass[10pt,a4paper,ragged2e,withhyper, normalphoto]{altacv}
 
-% adjust the page margins
-\usepackage[scale=0.9]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+%% AltaCV uses the fontawesome5 and academicons fonts
+%% and packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
 
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
 
-
-% personal data
-\name{Michał}{Martusewicz}
-\title{BEng}                               % optional, remove / comment the line if not wanted
-\address{Fiołkowa 6}{55-010 Święta Katarzyna}{Poland}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
-\phone[mobile]{+48~603~889~177}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-% \phone[fixed]{+2~(345)~678~901}
-% \phone[fax]{+3~(456)~789~012}
-\email{michal.mar3@gmail.com}                               % optional, remove / comment the line if not wanted
-% \homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
-% \social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
-\social[github]{iCarrrot}                              % optional, remove / comment the line if not wanted
-\social[linkedin]{michalmartusewicz}   
-% \extrainfo{}                 % optional, remove / comment the line if not wanted
-\photo[64pt][0.2pt]{Michal_Martusewicz_grey}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
-
-% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
-%   to show numerical labels in the bibliography (default is to show no labels)
-\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
-%   to redefine the bibliography heading string ("Publications")
-%\renewcommand{\refname}{Articles}
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
-
-
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
-\begin{document}
-
-
-
-
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
-%-----       resume       ---------------------------------------------------------
-\makecvtitle
-
-\section{Education}
-% \cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 can be left empty
-\cventry{2019--}{University of Wrocław}{Computer science studies, MSc}{Wrocław, Poland}{}{
-Thesis: Lattice extending strategies to correct automatic speech recognition system}  % arguments 3 to 6 can be left empty
-\cventry{2015--2019}{University of Wrocław}{Computer science studies, BEng}{Wrocław, Poland}{}{Thesis: Agile development of an application supporting the tube fittings manufacturing management}  % arguments 3 to 6 can be left empty
-\cventry{2015}{English course}{Atlantic Language School}{Galway, Ireland}{}{Upper intermediate level}  % arguments 3 to 6 can be left empty
-% \cventry{2012--2015}{High school}{}{Wrocław, Poland}{}{Special University Advanced Mathematics Program }  % arguments 3 to 6 can be left empty
-\cventry{2015}{Laureate of Regional Physic Olympiad}{}{}{}{}
-\cventry{2012--2015}{Secondary School no. III}{}{Wrocław, Poland}{}{} 
-\cventry{2012}{Regional Science Olympiad}{"zDolny Ślązak"}{}{}{Laureate in Physics and Biology\\Finalist in Mathematics, Chemistry and Geography}
-
-
-
-\section{Work experience}
-% \subsection{Vocational}
-\cventry{Jun 2018--}{Cloudflight Germany GmbH (formerly Catalysts Deutschland GmbH)}{Software developer and data scientist}{Frankfurt}{Germany}{
-\textbf{Projects:}
-\begin{itemize}
-    \item\textbf{Developing software for special satellites orbits types}
-    \begin{itemize}
-        \item The project goal was to simulate and possibly lunch satellites on highly elliptical orbit - to have a constant vision on north and south poles
-        \item Simulating satellite orbits (GMAT, OreKit, Python, Docker)
-        \item Live tracking and visualization (NumPy, MatPlotlib)
-        \item predicting possible collisions
-    \end{itemize}
-    \item \textbf{Airport luggage recognition and measuring system:}
-    \begin{itemize}
-        \item The project goal was to embed in airport security gate a system which automatically measures passenger's luggage - to avoid cabin luggage space overloading
-        \item Creating proper image dataset
-        \item Image recognition (Python, TensorFLow, object detection API, Docker)
-        \item Creating point clouds using Intel rgbd cameras and regular rgb cameras (PyRealSense, NumPy, matplotlib and other)
-    \end{itemize}
-    \item \textbf{ShowMySize app} by Twinster
-    \begin{itemize}
-        \item The project goal was to create a backend to an app that measures the body's size and suggests suitable clothes
-        \item Creating backend of the app (Django, REST API for Django, Postman for testing)
-        \item Working with Amazon Rekognition
-    \end{itemize}
-    \item \textbf{Improving image preprocessing for Austrian social insurance company:}
-    \begin{itemize}
-        \item The goal was to improve mobile images of invoices and get better text recognition accuracy 
-        \item Researching for different computer vision techniques
-        \item Using Google Tesseract OCR
-    \end{itemize}
-    \item \textbf{Connecting two databases without common identifiers:}
-    \begin{itemize}
-        \item The goal was to connect a product database and not normalized database with product reviews 
-        \item Using various NLP (natural language processing) approaches
-        \item Created web app for presentation the results in 3 days (Django, Bootstrap)
-    \end{itemize}
-    % \item\textbf{Developing software for special satellites orbiters types}
-    % \begin{itemize}
-    %     \item Simulating satellite orbits (GMAT, OreKit, Python, Docker)
-    %     \item Live tracking and visualization (NumPy, MatPlotlib)
-    %     \item predicting possible collisions
-    % \end{itemize}
-    % \item \textbf{Organizing Catalysts Coding Contests} - coding contest for university and high school students (more then 70 people per event averagely)
-    \item Managing summer interns for a short time
-\end{itemize}
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{lipsum}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
 }
-\cventry{Nov 2018--}{Organizing Catalysts/Cloudflight Coding Contests}{Open programming contest for university and high school students}{Wrocław}{Poland}{The contest is used as a promotion and recruiting tool in Cloudflight/Catalysts. I have co--organized 3 events, with more than 70 people per event}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  % If using pdflatex:
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  % \usepackage{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% Change the colours if you want to
+% \definecolor{SlateGrey}{HTML}{2E2E2E}
+% \definecolor{LightGrey}{HTML}{666666}
+% \definecolor{DarkPastelRed}{HTML}{450808}
+% \definecolor{PastelRed}{HTML}{8F0D0D}
+% \definecolor{GoldenEarth}{HTML}{E7D192}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{4d4d4d}
+\definecolor{DarkPastelRed}{HTML}{6680cc}
+\definecolor{PastelRed}{HTML}{66b3cc}
+\definecolor{GoldenEarth}{HTML}{ccb266}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
 
 
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
 
-% \cventry{Summer 2018}{Catalysts Deutschland GmBh}{Internship}{Frankfurt}{Germany}{
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
 
-% }
-\cventry{2016--2017}{Web Administrator}{Foundation for the Development of Wrocław University of Economy}{Wrocław}{Poland}{Reformatting web page hosted on WordPress with additional js customization (HTML, CSS, JS) \\ \url{http://fundacja.ue.wroc.pl/}}
-\cventry{Sep 2015}{Internship}{Parker Hannifin Manufacturing Poland}{Siechnice}{Poland}{Lean \& Production internship }
-% \cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
-% \subsection{Miscellaneous}
-% \cventry{year--year}{Job title}{Employer}{City}{}{Description}
-\section{Bachelor of Engineering thesis}
-\cvitem{title}{Agile development of an application supporting the tube fittings manufacturing management}
-\cvitem{description}{The subject of the thesis was creating a project and managing it using Scrum development framework and Unified Modeling Language.
-As a result of the project, an application supporting production management in Parker Hannifin Manufacturing Company in Siechnice was designed, implemented and installed.}
+\begin{document}
+\name{Michał Martusewicz}
+\tagline{Software developer, BEng}
+%% You can add multiple photos on the left or right
+\photoL{2.5cm}{Michal_Martusewicz_grey} 
+% \photoL{2.5cm}{Yacht_High,Suitcase_High}
+
+\personalinfo{%
+  % Not all of these are required!
+  \email{michal.mar3@gmail.com}
+  \phone{+48 603 889 177}
+%   \mailaddress{Åddrésş, Street, 00000 Cóuntry}
+  \location{Wrocław, Poland}
+%   \homepage{www.homepage.com}
+%   \twitter{@twitterhandle}
+  \linkedin{michalmartusewicz}
+  \github{iCarrrot}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+  % \orcid{0000-0000-0000-0000}
+  %% You can add your own arbtrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+}
+
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+
+\cvsection{Experience}
+    \cvevent{Software developer and data scientist}{Cloudflight Germany GmbH (formerly Catalysts Deutschland GmbH)}{Jun 2018 -- Nov 2020}{Frankfurt, Germany}
+    \textbf{Projects:}
+    \begin{itemize}
+        \item\textbf{\textcolor{DarkPastelRed}{Developing software for special satellites orbits types}}
+        \begin{itemize}
+            \item The project goal was to simulate and possibly lunch satellites on highly elliptical orbit - to have a constant vision on north and south poles
+            \item Simulating satellite orbits (GMAT, OreKit, Python, Docker)
+            \item Live tracking and visualization (NumPy, MatPlotlib)
+            \item predicting possible collisions
+        \end{itemize}
+        \item \textbf{\textcolor{DarkPastelRed}{Airport luggage recognition and measuring system:}}
+        \begin{itemize}
+            \item The project goal was to embed in airport security gate a system which automatically measures passenger's luggage - to avoid cabin luggage space overloading
+            \item Creating proper image dataset
+            \item Image recognition (Python, TensorFLow, object detection API, Docker)
+            \item Creating point clouds using Intel rgbd cameras and regular rgb cameras (PyRealSense, NumPy, matplotlib and other)
+        \end{itemize}
+        \item \textcolor{DarkPastelRed}{\textbf{ShowMySize app} by Twinster}
+        \begin{itemize}
+            \item The project goal was to create a backend to an app that measures the body's size and suggests suitable clothes
+            \item Creating backend of the app (Django, REST API for Django, Postman for testing)
+            \item Working with Amazon Rekognition
+        \end{itemize}
+        \item \textbf{\textcolor{DarkPastelRed}{Improving image preprocessing for Austrian social insurance company:}}
+        \begin{itemize}
+            \item The goal was to improve mobile images of invoices and get better text recognition accuracy 
+            \item Researching for different computer vision techniques
+            \item Using Google Tesseract OCR
+        \end{itemize}
+        \item \textcolor{DarkPastelRed}{\textbf{Connecting two databases without common identifiers:}}
+        \begin{itemize}
+            \item The goal was to connect a product database and not normalized database with product reviews 
+            \item Using various NLP (natural language processing) approaches
+            \item Created web app for presentation the results in 3 days (Django, Bootstrap)
+        \end{itemize}
+        % \item\textbf{Developing software for special satellites orbiters types}
+        % \begin{itemize}
+        %     \item Simulating satellite orbits (GMAT, OreKit, Python, Docker)
+        %     \item Live tracking and visualization (NumPy, MatPlotlib)
+        %     \item predicting possible collisions
+        % \end{itemize}
+        % \item \textbf{Organizing Catalysts Coding Contests} - coding contest for university and high school students (more then 70 people per event averagely)
+        \item Managing summer interns for a short time
+    \end{itemize}
+    
+    \divider
+\newpage
+    
+    \cvevent{Web Administrator}{Foundation for the Development of Wrocław University of Economy}{2016--2017}{Wrocław, Poland}
+    Reformatting web page hosted on WordPress with additional js customization (HTML, CSS, JS) \\ \url{http://fundacja.ue.wroc.pl/}
+    
+    \divider
+    
+    \cvevent{Internship}{Parker Hannifin Manufacturing Poland}{Sep 2015}{Siechnice, Poland}
+    Lean \& Production internship 
+    
+    \divider
+
+% \medskip
+
+
+\cvsection{MSc thesis}
+\cvevent{Lattice extending strategies to correct results of automatic speech recognition system}{}{}{}
+The subject of the thesis was to improve the output of automatic speech recognition system by adding more edges to the lattice. This thesis was part of system which won the PolEval contest. The publication is available here:
+\\ \textcolor{PastelRed}{\textbf{\url{http://poleval.pl/files/poleval2020.pdf}}}
+
+\medskip
+
+\cvsection{BEng thesis}
+\cvevent{Agile development of an application supporting the tube fittings manufacturing management}{}{}{}
+The subject of the thesis was creating a project and managing it using Scrum development framework and Unified Modeling Language.
+As a result of the project, an application supporting production management in Parker Hannifin Manufacturing Company in Siechnice was designed, implemented and installed
+\medskip
+
+
+\cvsection{University courses}
+\cvtag{Neural Networks and Deep Learning }
+\cvtag{Algorithms for Big Data}
+\cvtag{Machine Learning }
+\cvtag{Advanced Distributed Algorithms}\\
+\cvtag{Evolutionary algorithms}
+\cvtag{Data mining}
+\cvtag{NLP} \\
+\cvtag{Computational photography}
+    % \divider
+
+% use ONLY \newpage if you want to force a page break for
+% ONLY the current column
 % \newpage
-\section{Languages skills}
-% \subsection{Languages}
-\cvitem{English}{Businesses fluent}
-\cvitem{German}{Basic}
-% \cvitemwithcomment{Language 3}{Skill level}{Comment}
 
-\section{Computer skills}
-\cvitem{Advanced level}{Python (incl. pandas, numpy, django, matplotlib) Django, ML, NLP, Linux, Git}
-\cvitem{Medium level}{PyTorch, Bash, Docker, Lua, C/C++, Ruby, PostgreSQL, LATEX, HTML + CSS + JavaScript, Bootstrap}
-\cvitem{Basic level}{C\#, Java, OCaml,  Julia, Nim, Haskell, Prolog}
-
-% \cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
-
-\section{Interests}
-\cvitem{}{New / emerging technologies}
-\cvitem{}{Ballroom dancing, running, hiking, skiing, sailing, travelling}
-% \cvitem{hobby 3}{Description}
-
-% \section{Extra 1}
-% \cvlistitem{Item 1}
-% \cvlistitem{Item 2}
-% \cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
-
-% \section{Extra 2}
-% \cvlistdoubleitem{Item 1}{Item 4}
-% \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
-% \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
-
-% \section{References}
-% \begin{cvcolumns}
-%   \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
-%   \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
-%   \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
-% \end{cvcolumns}
-
-% % Publications from a BibTeX file without multibib
-% %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-% %  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-% \nocite{*}
-% \bibliographystyle{plain}
-% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
-
-% Publications from a BibTeX file using the multibib package
-% \section{Publications}
-% \nocitebook{book1,book2}
-% \bibliographystylebook{plain}
-% \bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
-% \nocitemisc{misc1,misc2,misc3}
-% \bibliographystylemisc{plain}
-% \bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\blfootnote{\textcolor{gray}{
+I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament's and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
+}}
 
 
+\switchcolumn
 
-%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\cvsection{My Life Philosophy}
+
+\begin{quote}
+``It has never been so, that somehow it was not.''
+\end{quote}
+\medskip
+
+\cvsection{Education}
+    \cvevent{MSc in Computer Science}{University of Wrocław}{2019--(2021)}{Wrocław, Poland}
+    % Thesis title: Lattice extending strategies to correct automatic speech recognition system
+    
+    \divider
+    
+    \cvevent{BEng in Computer Science}{University of Wrocław}{2015--2019}{Wrocław, Poland}
+    % Thesis title: Agile development of an application supporting the tube fittings manufacturing management\\
+    Thesis grade: 4.5,
+    Studies grade: 4 
+    
+    \divider
+    
+    \cvevent{English course}{Atlantic Language School}{2015}{Galway, Ireland}
+    Upper intermediate level
+    
+    \divider
+    
+    \cvevent{Laureate of Regional Physic Olympiad}{}{2015}{Wrocław}
+    
+    % \divider
+    
+    \cvevent{Secondary School no. III}{Mat-mat class}{2012--2015}{Wrocław}
+    
+    % \divider
+    
+    \cvevent{Regional Science Olympiad}{"zDolny Ślązak"}{2012}{Wrocław}
+    Laureate in Physics and Biology\\Finalist in Mathematics, Chemistry and Geography
+\medskip
+
+\cvsection{Languages}
+\cvskill{Polish}{5}
+\divider
+\cvskill{English}{5}
+\divider
+\cvskill{German}{2}
+
+\newpage
+% \cvsection{Most Proud of}
+
+% \cvachievement{\faTrophy}{Fantastic Achievement}{and some details about it}
+
+% \divider
+
+% \cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
+
+% \divider
+
+% \cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
+\cvsection{Computer skills}
+\cvevent{Advanced level}{}{}{}
+\cvtag{Python} \cvtag{Pandas} \cvtag{NumPy} \cvtag{MatPlotLib}  \cvtag{Django} \cvtag{ML} \cvtag{NLP} \cvtag{Linux} \cvtag{Git}
+% \divider
+
+\smallskip
+
+\cvevent{Medium level}{}{}{}
+\cvtag{PyTorch} \cvtag{Bash} \cvtag{Docker} \cvtag{Lua} \cvtag{C/C++} \cvtag{Ruby} \cvtag{PostgreSQL} \cvtag{LATEX} \\
+\cvtag{HTML} + \cvtag{CSS} + \cvtag{JavaScript}
+\cvtag{Bootstrap}
+
+% \divider
+\smallskip
+
+\cvevent{Basic level}{}{}{}
+\cvtag{C\#} \cvtag{Java} \cvtag{OCaml} \cvtag{Julia} \cvtag{Nim} \cvtag{Haskell} \cvtag{Prolog}
+
+\smallskip
+
+
+
+
+
+
+
+% \newpage
+
+
+%% Yeah I didn't spend too much time making all the
+%% spacing consistent... sorry. Use \smallskip, \medskip,
+%% \bigskip, \vpsace etc to make adjustments.
+\medskip
+
+\cvsection{Other projects}
+    
+    \cvevent{Organizing Catalysts/Cloudflight Coding Contests}{Open programming contest for university and high school students}{}{}
+    The contest is used as a promotion and recruiting tool in Cloudflight/Catalysts. I have co--organized 3 events, with more than 70 people per event
+    
+    \divider
+    
+    \cvevent{Automated Sudoku checker}{
+    \url{bit.ly/sudoku_checker}}{}{}
+    The project involved neural nets to recognize handwritten digits and then finding errors
+    
+    \divider
+    
+    \cvevent{Compiler in prolog}{\url{bit.ly/prolog_compiler}}{}{}
+    The goal was to create an compiler of artificial language (based on algol68) on a simple processor. It was created in prolog
+
+\medskip
+
+
+\cvsection{Interests}
+
+\cvtag{New / emerging technologies} \\
+\cvtag{Ballroom dancing} \cvtag{Running} \cvtag{Hiking}  \cvtag{Skiing} \cvtag{Sailing} \cvtag{Traveling} 
+
+
+\smallskip
+% \cvitem{title}{Agile development of an application supporting the tube fittings manufacturing management}
+% \cvitem{description}{The subject of the thesis was creating a project and managing it using Scrum development framework and Unified Modeling Language.
+% As a result of the project, an application supporting production management in Parker Hannifin Manufacturing Company in Siechnice was designed, implemented and installed.}
+% \cvsection{Referees}
+
+% % \cvref{name}{email}{mailing address}
+% \cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
+% {Address Line 1\\Address line 2}
+
+% \divider
+
+% \cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
+% {Address Line 1\\Address line 2}
+
+
+\end{paracol}
+
+
 \end{document}
-
-
-%% end of file `template.tex'.
