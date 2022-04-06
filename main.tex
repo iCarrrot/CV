@@ -30,7 +30,7 @@
 %% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for a full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
 
 % Change the page layout if you need to
-\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+\geometry{left=1.3cm,right=1.3cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
 
 % The paracol package lets you typeset columns of text in parallel
 \usepackage{paracol}
@@ -104,7 +104,7 @@
 
 \begin{document}
 \name{Michał Martusewicz}
-\tagline{Software developer, BEng}
+\tagline{Software developer, MSc}
 %% You can add multiple photos on the left or right
 \photoL{2.5cm}{Michal_Martusewicz_grey} 
 % \photoL{2.5cm}{Yacht_High,Suitcase_High}
@@ -135,7 +135,7 @@
 % \AtBeginEnvironment{itemize}{\small}
 
 %% Set the left/right column width ratio to 6:4.
-\columnratio{0.6}
+\columnratio{0.58}
 
 % Start a 2-column paracol. Both the left and right columns will automatically
 % break across pages if things get too long.
@@ -143,23 +143,37 @@
 
 
 \cvsection{Experience}
-    \cvevent{Data engineer}{Tipser}{Jan 2021 -- Now}{Wrocław, Poland}
-    \textbf{\textcolor{DarkPastelRed}{Building text and image classification pipeline}}
-    
-    Creating pipelines and solutions for the classification of both images and text. Using AWS SageMaker for classification and AWS Step Functions for training pipeline. 
-    
+    \cvevent{Data engineer}{Bolt Financial, Inc (formerly Tipser AB)}{Jan 2021 -- Now}{Wrocław, Poland}
+    \begin{itemize}
+        \item \textbf{\textcolor{DarkPastelRed}{Data classification training pipeline}}
+        \begin{itemize}
+            \item The goal was to build models recognizing product genders and categories
+            \item Creating and updating AWS lambdas in C\# and Python
+            \item Creating and upgrading pipelines using AWS step function
+            \item Supervising data labeling
+            \item Training model in AWS Sagemaker and preparing model evaluation reports
+        \end{itemize}
+
+        \item  \textbf{\textcolor{DarkPastelRed}{Other work}}
+            \begin{itemize}
+                \item Creating and maintaining production API in Python and C\#
+                \item Researching papers for hackathons
+                \item creating dashboards in Kibana
+                \item Conducting coding interviews
+            \end{itemize}
+    \end{itemize}
     \divider
     
     \cvevent{Software developer and data scientist}{Cloudflight Germany GmbH (formerly Catalysts Deutschland GmbH)}{Jun 2018 -- Nov 2020}{Frankfurt, Germany}
     \textbf{Projects:}
     \begin{itemize}
-        \item\textbf{\textcolor{DarkPastelRed}{Developing software for special satellites orbits types}}
-        \begin{itemize}
-            \item The project goal was to simulate and possibly lunch satellites on highly elliptical orbit - to have a constant vision on north and south poles
-            \item Simulating satellite orbits (GMAT, OreKit, Python, Docker)
-            \item Live tracking and visualization (NumPy, MatPlotlib)
-            \item predicting possible collisions
-        \end{itemize}
+        % \item\textbf{\textcolor{DarkPastelRed}{Developing software for special satellites orbits types}}
+        % \begin{itemize}
+        %     \item The project goal was to simulate and possibly lunch satellites on highly elliptical orbit - to have a constant vision on north and south poles
+        %     \item Simulating satellite orbits (GMAT, OreKit, Python, Docker)
+        %     \item Live tracking and visualization (NumPy, MatPlotlib)
+        %     \item predicting possible collisions
+        % \end{itemize}
         \item \textbf{\textcolor{DarkPastelRed}{Airport luggage recognition and measuring system:}}
         \begin{itemize}
             \item The project goal was to embed in airport security gate a system which automatically measures passenger's luggage - to avoid cabin luggage space overloading
@@ -179,12 +193,12 @@
             \item Researching for different computer vision techniques
             \item Using Google Tesseract OCR
         \end{itemize}
-        \item \textcolor{DarkPastelRed}{\textbf{Connecting two databases without common identifiers:}}
-        \begin{itemize}
-            \item The goal was to connect a product database and not normalized database with product reviews 
-            \item Using various NLP (natural language processing) approaches
-            \item Created web app for presentation the results in 3 days (Django, Bootstrap)
-        \end{itemize}
+        % \item \textcolor{DarkPastelRed}{\textbf{Connecting two databases without common identifiers:}}
+        % \begin{itemize}
+        %     \item The goal was to connect a product database and not normalized database with product reviews 
+        %     \item Using various NLP (natural language processing) approaches
+        %     \item Created web app for presentation the results in 3 days (Django, Bootstrap)
+        % \end{itemize}
         % \item\textbf{Developing software for special satellites orbiters types}
         % \begin{itemize}
         %     \item Simulating satellite orbits (GMAT, OreKit, Python, Docker)
@@ -192,7 +206,7 @@
         %     \item predicting possible collisions
         % \end{itemize}
         % \item \textbf{Organizing Catalysts Coding Contests} - coding contest for university and high school students (more then 70 people per event averagely)
-        \item Managing summer interns for a short time
+        % \item Managing summer interns for a short time
     \end{itemize}
     
     \divider
@@ -280,20 +294,35 @@ I hereby give consent for my personal data included in my application to be proc
     
     % \divider
     
-    \cvevent{Secondary School no. III}{Mat-mat class}{2012--2015}{Wrocław}
+    \cvevent{Secondary School no. III}{The special university math program}{2012--2015}{Wrocław}
     
     % \divider
     
-    \cvevent{Regional Science Olympiad}{"zDolny Ślązak"}{2012}{Wrocław}
-    Laureate in Physics and Biology\\Finalist in Mathematics, Chemistry and Geography
+    % \cvevent{Regional Science Olympiad}{"zDolny Ślązak"}{2012}{Wrocław}
+    % Laureate in Physics and Biology\\Finalist in Mathematics, Chemistry and Geography
 \medskip
+\cvsection{Computer skills}
+\cvevent{Advanced level}{}{}{}
+\cvtag{Python} \cvtag{Pandas} \cvtag{NumPy} \cvtag{MatPlotLib}  \cvtag{Django} \cvtag{ML} \cvtag{NLP} \cvtag{Linux/MacOS} \cvtag{Git}
+% \divider
 
-\cvsection{Languages}
-\cvskill{Polish}{5}
-\divider
-\cvskill{English}{5}
-\divider
-\cvskill{German}{2}
+\smallskip
+
+\cvevent{Medium level}{}{}{}
+\cvtag{C\#} \cvtag{AWS} \cvtag{PyTorch} \cvtag{Docker} \cvtag{LATEX}
+\\ \cvtag{Lua} \cvtag{C/C++} \cvtag{Ruby} \cvtag{PostgreSQL} \cvtag{Bash}
+\\ \cvtag{HTML} + \cvtag{CSS} + \cvtag{JavaScript}
+\cvtag{Bootstrap} 
+
+% \divider
+\smallskip
+
+\cvevent{Basic level}{}{}{}
+\cvtag{Java} \cvtag{OCaml} \cvtag{Julia} \cvtag{Nim} \cvtag{Haskell} \cvtag{Prolog}
+
+\smallskip
+
+
 
 \newpage
 % \cvsection{Most Proud of}
@@ -307,25 +336,14 @@ I hereby give consent for my personal data included in my application to be proc
 % \divider
 
 % \cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
-\cvsection{Computer skills}
-\cvevent{Advanced level}{}{}{}
-\cvtag{Python} \cvtag{Pandas} \cvtag{NumPy} \cvtag{MatPlotLib}  \cvtag{Django} \cvtag{ML} \cvtag{NLP} \cvtag{Linux} \cvtag{Git}
-% \divider
 
-\smallskip
+\cvsection{Languages}
+\cvskill{Polish}{5}
+\divider
+\cvskill{English}{5}
+\divider
+\cvskill{German}{2}
 
-\cvevent{Medium level}{}{}{}
-\cvtag{PyTorch} \cvtag{Bash} \cvtag{Docker} \cvtag{Lua} \cvtag{C/C++} \cvtag{Ruby} \cvtag{PostgreSQL} \cvtag{LATEX} \\
-\cvtag{HTML} + \cvtag{CSS} + \cvtag{JavaScript}
-\cvtag{Bootstrap} \cvtag{C\#} \cvtag{AWS}
-
-% \divider
-\smallskip
-
-\cvevent{Basic level}{}{}{}
-\cvtag{Java} \cvtag{OCaml} \cvtag{Julia} \cvtag{Nim} \cvtag{Haskell} \cvtag{Prolog}
-
-\smallskip
 
 
 
