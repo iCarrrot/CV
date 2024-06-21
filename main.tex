@@ -143,23 +143,51 @@
 
 
 \cvsection{Experience}
-    \cvevent{Data scientist}{Trans.eu}{Jul 2022 -- Now}{Wrocław, Poland}
+    \cvevent{Senior data scientist}{Trans.eu}{Jul 2022 -- Now}{Wrocław, Poland}
     \begin{itemize}
+
+
+        
+    \item  \textbf{\textcolor{DarkPastelRed}{Informal transaction detection}}
+        \begin{itemize}
+            \item The goal was, based on users conversations, to predict if they made an informal transaction 
+            \item Unique solution for polish
+            \item Fine tuning Bert-based models (Herbert, polish roberta) 
+            \item As an alternative solution - using gpt-3.5, gpt-4 and gpt-4o
+        \end{itemize}
     
-    \item  \textbf{\textcolor{DarkPastelRed}{Building prediction models}}
+    \item  \textbf{\textcolor{DarkPastelRed}{Price prediction model}}
         \begin{itemize}
             \item The goal was to predict the price of package delivery based on every data possible to get
-            \item connecting data from Snowflake to AWS Sagemaker
+            \item Connecting data from Snowflake to AWS Sagemaker
             \item Setting up custom code to train models
+            \item Automating with Airflow
         \end{itemize}
-    \item \textbf{\textcolor{DarkPastelRed}{Advising on the transition to the cloud}}
+
+    \item  \textbf{\textcolor{DarkPastelRed}{Registration numbers extracting}}
         \begin{itemize}
-            \item Sharing knowledge to help the company in the transition from local architecture to AWS-based architecture
+            \item The project goal was to extract registration numbers from trucks of
+            \item The images were often very poor quality with wired angles
+            \item Using pre-trained registration tables model to detect the table
+            \item Enhancing image using various computer vision techniques (i. ex. local thresholding, contour recognition and four points transform from OpenCV)
+            \item Extracting text using models from mmocr
         \end{itemize}
-    \item  \textbf{\textcolor{DarkPastelRed}{Engineering data in Snowflake}}
-        \begin{itemize}
-            \item Gathering data from multiple sources and generating features for models
-        \end{itemize}
+    
+    % \item  \textbf{\textcolor{DarkPastelRed}{Building prediction models}}
+    %     \begin{itemize}
+    %         \item The goal was to predict the price of package delivery based on every data possible to get
+    %         \item connecting data from Snowflake to AWS Sagemaker
+    %         \item Setting up custom code to train models
+    %     \end{itemize}
+        
+    % \item \textbf{\textcolor{DarkPastelRed}{Advising on the transition to the cloud}}
+    %     \begin{itemize}
+    %         \item Sharing knowledge to help the company in the transition from local architecture to AWS-based architecture
+    %     \end{itemize}
+    % \item  \textbf{\textcolor{DarkPastelRed}{Engineering data in Snowflake}}
+    %     \begin{itemize}
+    %         \item Gathering data from multiple sources and generating features for models
+    %     \end{itemize}
     
     \end{itemize}
     
@@ -181,11 +209,11 @@
             \begin{itemize}
                 \item Creating and maintaining production API in Python and C\#
                 \item Researching papers for hackathons
-                \item creating dashboards in Kibana
+                % \item creating dashboards in Kibana
                 \item Conducting coding interviews
             \end{itemize}
     \end{itemize}
-    \divider
+    % \divider
     
     \cvevent{Software developer and data scientist}{Cloudflight Germany GmbH (formerly Catalysts Deutschland GmbH)}{Jun 2018 -- Nov 2020}{Frankfurt, Germany}
     \textbf{Projects:}
@@ -199,16 +227,14 @@
         % \end{itemize}
         \item \textbf{\textcolor{DarkPastelRed}{Airport luggage recognition and measuring system:}}
         \begin{itemize}
-            \item The project goal was to embed in airport security gate a system which automatically measures passenger's luggage - to avoid cabin luggage space overloading
-            \item Creating proper image dataset
-            \item Image recognition (Python, TensorFLow, object detection API, Docker)
-            \item Creating point clouds using Intel rgbd cameras and regular rgb cameras (PyRealSense, NumPy, matplotlib and other)
+            \item The project goal was to embed in airport security gate a system which automatically measures passenger's luggage - to avoid cabin luggage space overloading with Python, TensorFlow, NumPy and Docker
+            % \item Creating proper image dataset
+            % \item Image recognition (Python, TensorFLow, object detection API, Docker)
+            % \item Creating point clouds using Intel rgbd cameras and regular rgb cameras (PyRealSense, NumPy, matplotlib and other)
         \end{itemize}
         \item \textcolor{DarkPastelRed}{\textbf{ShowMySize app} by Twinster}
         \begin{itemize}
-            \item The project goal was to create a backend to an app that measures the body's size and suggests suitable clothes
-            \item Creating backend of the app (Django, REST API for Django, Postman for testing)
-            \item Working with Amazon Rekognition
+            \item The project goal was to create a backend to an app that measures the body's size and suggests suitable clothes. Using Django, REST API for Django, Postman for testing and Amazon Rekognition
         \end{itemize}
         \item \textbf{\textcolor{DarkPastelRed}{Improving image preprocessing for Austrian social insurance company:}}
         \begin{itemize}
